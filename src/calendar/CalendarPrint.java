@@ -21,16 +21,22 @@ public class CalendarPrint {
 	
 	public static void main(String[] args) {
 		
-		//숫자를 입력받아 해당하는 달의 최대일자 를 출력하는 프로그램     
+		//반복해서 출력한 숫자를 입력받아 숫자만큼 최대일자 를 출력하는 프로그램   
 		Scanner sc = new Scanner(System.in); 	
-		System.out.println("달을 입력하세요");
-		int inMonth = sc.nextInt();
+		System.out.println("출력하고 싶은 달의 개수를 입력하세요");
+		int repeatNo = sc.nextInt();
 		
-		//달의 최대일자 구하는 메소드
-		CalendarPrint cal = new CalendarPrint();
-		
-		System.out.printf("%d월의 마지막날은 %d입니다\n", inMonth, cal.getMaxdaysOfMonth(inMonth));
-		
+		for (int i = 0; i < repeatNo; i++) {  //n번 반복
+			
+			System.out.println("출력하고자하는 달을 입력하세요");
+			int desireMonth = sc.nextInt();
+			
+			//달의 최대일자 구하는 메소드ㅣ
+			CalendarPrint cal = new CalendarPrint();
+			
+			System.out.printf("%d월의 마지막날은 %d입니다\n", desireMonth, cal.getMaxdaysOfMonth(desireMonth));
+		}
+		System.out.println("출력이 종료되었습니다!");
 		sc.close();
 	}
 }
