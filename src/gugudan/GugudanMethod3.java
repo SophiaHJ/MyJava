@@ -1,7 +1,6 @@
 package gugudan;
 
 // return 값 존재 method 정의, 파라미터 이용, 배열사용
-// test Pull request2
 
 public class GugudanMethod3 {
 		
