@@ -2,7 +2,7 @@ package gugudan;
 
 import java.util.Scanner;
 
-//두개의 문자 값에 따라 크기가 다른 구구단 출력한다
+//두개의 문자 값에 따라 크기가 다른 구구단 출력한다 
 public class GugudanMain {
 	
 
